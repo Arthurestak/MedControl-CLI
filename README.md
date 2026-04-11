@@ -1,7 +1,5 @@
 # MedControl CLI
 
-![CI](https://github.com/SEU_USUARIO/SEU_REPOSITORIO/actions/workflows/ci.yml/badge.svg)
-
 ## Problema
 
 Idosos e pacientes com doenças crônicas frequentemente esquecem de tomar medicamentos nos horários corretos, o que pode causar complicações sérias de saúde.
