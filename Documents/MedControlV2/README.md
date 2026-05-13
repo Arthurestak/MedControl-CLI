@@ -1,7 +1,5 @@
 # MedControl CLI
 
-![CI](https://github.com/SEU_USUARIO/SEU_REPOSITORIO/actions/workflows/ci.yml/badge.svg)
-
 > 🌐 **Deploy (como executar sem instalar):** veja a seção [Como executar](#como-executar) abaixo.  
 > 📦 **Repositório:** https://github.com/Arthurestak/MedControlV2
 
