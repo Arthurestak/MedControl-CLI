@@ -1,11 +1,8 @@
 # MedControl CLI
 
-![CI](https://github.com/SEU_USUARIO/SEU_REPOSITORIO/actions/workflows/ci.yml/badge.svg)
-
 ## 🌐 Deploy (acesso público)
 
-> ▶️ **Acesse e execute online:** https://replit.com/@SEU_USUARIO/SEU_REPOSITORIO  
-> *(substitua pelo link gerado após importar no Replit — veja instruções abaixo)*
+> ▶️ **Acesse e execute online:** https://med-control-cli--arthurestak.replit.app/
 
 ---
 
@@ -71,8 +68,8 @@ medcontrol/
 
 ```bash
 # Clone o repositório
-git clone https://github.com/SEU_USUARIO/SEU_REPOSITORIO.git
-cd SEU_REPOSITORIO
+git clone https://github.com/Arthurestak/MedControl-CLI
+cd MedControl-CLI
 
 # (Opcional) Crie um ambiente virtual
 python -m venv .venv
@@ -100,15 +97,6 @@ Ao iniciar, a aplicação exibe automaticamente a temperatura atual e um alerta:
 0 - Sair
 Escolha:
 ```
-
-## Deploy no Replit (passo a passo)
-
-1. Acesse [replit.com](https://replit.com) e faça login (ou crie uma conta gratuita)
-2. Clique em **+ Create Repl** → aba **Import from GitHub**
-3. Cole a URL do seu repositório GitHub e clique em **Import**
-4. O Replit detecta automaticamente o `.replit` e configura o ambiente
-5. Clique em **▶ Run** — a CLI abrirá no terminal do Replit
-6. Copie a URL do Repl (formato `https://replit.com/@SEU_USUARIO/SEU_REPOSITORIO`) e cole no topo deste README
 
 ## Como rodar os testes
 
