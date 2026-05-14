@@ -6,6 +6,10 @@
  * OpenAPI spec version: 0.1.0
  */
 
-export interface HealthStatus {
-  status: string;
+export interface MedicationInput {
+  /** @minLength 1 */
+  name: string;
+  /** @minLength 1 */
+  scheduledTime: string;
+  notes?: string;
 }
