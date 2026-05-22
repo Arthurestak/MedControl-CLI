@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    return "<h1>MedControl API</h1><p><a href='/medications'>Ver medicamentos</a></p>"
+    return "<center><h1>MedControl API</h1><p><a href='/medications'><button style="background-color: blue; border: none; padding:5px; border-radius: 10px;">Ver medicamentos</button></a></p></center>"
 
 @app.route("/medications")
 def medications():
