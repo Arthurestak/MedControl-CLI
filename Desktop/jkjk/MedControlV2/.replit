@@ -1,0 +1,15 @@
+# Arquivo de configuração do Replit
+# Define como o projeto é executado na plataforma
+
+run = "python -m src.main"
+language = "python3"
+
+[nix]
+channel = "stable-24_05"
+
+[unitTest]
+language = "python3"
+
+[deployment]
+run = ["sh", "-c", "python -m src.main"]
+deploymentTarget = "cloudrun"
