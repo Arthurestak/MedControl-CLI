@@ -1,27 +1,21 @@
-from src.storage import load, save_new, update_taken
-from src.models import Medication
- 
- 
-class MedicationService:
-    def __init__(self):
-        self.medications = load()
- 
-    def add(self, name: str, time: str) -> None:
-        if not name:
-            raise ValueError("Nome inválido")
- 
-        med = Medication(name, time)
-        db_id = save_new(med)
-        med.db_id = db_id
-        self.medications.append(med)
- 
-    def list(self) -> list[Medication]:
-        return self.medications
- 
-    def mark_as_taken(self, index: int) -> None:
-        if index < 0 or index >= len(self.medications):
-            raise ValueError("Índice inválido")
- 
-        med = self.medications[index]
-        med.taken = True
-        update_taken(med.db_id, True)
+class Medication:
+    def __init__(self, name: str, time: str, taken: bool = False, db_id: int | None = None):
+        self.name = name
+        self.time = time
+        self.taken = taken
+        self.db_id = db_id
+
+    def to_dict(self) -> dict:
+        return {
+            "name": self.name,
+            "time": self.time,
+            "taken": self.taken,
+        }
+
+    @staticmethod
+    def from_dict(data: dict) -> "Medication":
+        return Medication(
+            name=data["name"],
+            time=data["time"],
+            taken=data["taken"],
+        )
